@@ -522,3 +522,256 @@ footer > .content {
         font-size: 10px;
     }
 }
+
+@media screen and (min-width: 100px) and (max-width: 900px) {
+    .free_app-top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .free_app-top--btns {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .top-header a:last-child {
+        padding: 10px 25px;
+    }
+
+    .top-header {
+        height: 100px;
+    }
+
+    .header-main > h1 {
+        font-size: 2.75em;
+        line-height: 5rem;
+    }
+
+    .header-main > a {
+        width: 250px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 16px 20px;
+        font-size: 2em;
+        margin: 0 auto auto 0;
+    }
+
+    .algoritm-top-item > img {
+        padding-bottom: 0;
+        height: 100%;
+    }
+
+    .algoritm-bottom > span {
+        font-size: 1.4em;
+        text-align: center;
+        white-space: normal;
+        line-height: 1.4rem;
+    }
+
+    .algoritm-top-item {
+        height: 100px;
+    }
+
+    .free_app-top--iphone img {
+        width: 100%;
+    }
+
+    .free_app-top--download h2 {
+        font-size: 1.8em;
+    }
+
+    .free_app-top--download p {
+        margin-top: 30px;
+    }
+
+    .free_app-top--download .free_app-top--btns {
+        margin-top: 30px;
+    }
+
+    .free_app-top--download .free_app-top--btns > a {
+        margin: auto;
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    .free_app-top--download .free_app-top--btns > a > img {
+        width: 100%;
+    }
+
+    .free_app-top--download {
+        min-width: 100%;
+    }
+
+    .free_app-bottom {
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+
+    .faq-main {
+        min-width: 100%;
+    }
+
+    .faq h2 {
+        margin: 25px 0;
+    }
+
+    .faq-main--question > summary {
+        padding: 10px 0;
+        padding-right: 36px;
+        line-height: 1.8rem;
+    }
+
+    .faq-main--question p {
+        padding-bottom: 16px;
+        line-height: 1.1rem;
+        font-size: 1.2em;
+    }
+
+    .write_us input,
+    .write_us textarea {
+        min-width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px 16px;
+        font-size: 1.3em;
+    }
+
+    .write_us button {
+        font-size: 1.6em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 11px 30px;
+    }
+
+    footer > .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        padding: 30px 8.5%;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    .downloads {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .contacts p:first-child {
+        margin-bottom: 18px;
+    }
+
+    .contacts p,
+    .contacts span,
+    .contacts a,
+    .downloads p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 525px) and (max-width: 900px) {
+    .free_app-top--iphone img {
+        width: 100%;
+    }
+
+    .free_app-top {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .free_app-top--download {
+        width: 50%;
+        min-width: 50%;
+        margin-top: 75px;
+    }
+
+    .free_app-top--download h2 {
+        font-size: 1.75em;
+        white-space: nowrap;
+    }
+
+    .free_app-top--download p {
+        margin-top: 15px;
+    }
+
+    .free_app-top--download .free_app-top--btns {
+        margin-top: 16px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .free_app-top--download .free_app-top--btns > a {
+        margin: 0;
+        width: calc(50% - 8px);
+    }
+
+    .free_app-top--iphone {
+        width: 50%;
+        padding-right: 26px;
+    }
+
+    .write_us input,
+    .write_us textarea {
+        min-width: 30px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 900px) {
+    .free_app-top--download {
+        min-width: 50%;
+    }
+    
+    .free_app-top--download .free_app-top--btns {
+        margin-top: 30px;
+    }
+
+    .free_app-top--download .free_app-top--btns > a {
+        margin: 0;
+        width: calc(50% - 8px);
+        margin-top: 10px;
+    }
+
+    .free_app-top--download .free_app-top--btns > a > img {
+        width: 100%;
+    }
+
+    .free_app-top--iphone {
+        padding-right: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .free_app-top--iphone img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .free_app-top--download .free_app-top--btns > a {
+        margin: 0;
+        width: calc(50% - 8px);
+        margin-top: 10px;
+    }
+
+    .free_app-top--download .free_app-top--btns > a > img {
+        width: 100%;
+    }
+}
