@@ -5,7 +5,12 @@ html {
 .container > header,
 .container > main,
 .container > footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -29,15 +34,21 @@ html {
     top: 0px;
     background: rgba(0, 0, 0, 0.25);
 }
+
 .top-header .content {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .top-header a {
     margin: auto 0;
 }
+
 .top-header a:last-child {
     padding: 11px 95px;
     border: 1px solid #ffffff;
@@ -45,6 +56,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -59,7 +71,12 @@ html {
 }
 
 .header-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
     height: 100%;
 
@@ -83,6 +100,7 @@ html {
     padding: 16px 55px;
     border: 0px;
     background: #44F1A6;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     color: #000000;
@@ -94,6 +112,7 @@ html {
     line-height: 3.3125rem;
     text-align: center;
     letter-spacing: 0.02em;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -108,6 +127,7 @@ html {
     font-weight: 500;
     font-size: 3.125em;
     line-height: 3.6875rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2FE89A), to(#2B3569));
     background: linear-gradient(180deg, #2FE89A 0%, #2B3569 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -115,7 +135,10 @@ html {
 }
 
 .algoritm-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -123,7 +146,12 @@ html {
     margin: auto 0;
     text-align: center;
     margin-top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
 }
@@ -131,15 +159,19 @@ html {
 .algoritm-top div:nth-child(1) {
     width: 17.4%;
 }
+
 .algoritm-top div:nth-child(2) {
     width: 21.1%;
 }
+
 .algoritm-top div:nth-child(3) {
     width: 12%;
 }
+
 .algoritm-top div:nth-child(4) {
     width: 26%;
 }
+
 .algoritm-top div:nth-child(5) {
     width: 17.5%;
 }
@@ -155,12 +187,17 @@ html {
 .algoritm-top-connect {
     margin: auto 0;
 }
+
 .algoritm-top-connect:last-of-type {
     margin-left: -10px;
 }
 
 .algoritm-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -171,6 +208,7 @@ html {
     font-weight: 500;
     font-size: 1.875em;
     line-height: 2.1875rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2FE89A), to(#2B3569));
     background: linear-gradient(180deg, #2FE89A 0%, #2B3569 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,10 +216,13 @@ html {
 }
 
 .free_app {
+    background: -webkit-gradient(linear, left top, left bottom, from(#2FE89A), to(#2B3569));
     background: linear-gradient(180deg, #2FE89A 0%, #2B3569 100%);
 }
 
 .free_app-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: -72px;
 }
@@ -215,6 +256,8 @@ html {
 
 .free_app-top--download .free_app-top--btns {
     margin-top: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -244,6 +287,7 @@ html {
     line-height: 2.5rem;
     text-align: center;
     letter-spacing: 0.02em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2FE89A), to(#2B3569));
     background: linear-gradient(180deg, #2FE89A 0%, #2B3569 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -262,6 +306,7 @@ html {
 summary::-webkit-details-marker {
     display: none;
 }
+
 /* Убираем стандартный маркер Firefox */
 summary::-moz-list-bullet {
     list-style-type: none;
@@ -276,6 +321,7 @@ summary::-moz-list-bullet {
     line-height: 2.25rem;
     color: #475F6C;
     padding: 16px 0;
+    padding-right: 40px;
     outline: 0;
     cursor: pointer;
 }
@@ -294,7 +340,7 @@ summary::-moz-list-bullet {
 }
 
 .faq-main--question summary::after {
-    content: "+";
+    content: url("../img/faq_plus.svg") "+";
     position: absolute;
     top: 18px;
     right: 0;
@@ -302,15 +348,18 @@ summary::-moz-list-bullet {
     width: 30px;
     height: 30px;
     text-align: center;
-    font-size: 48px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 100;
     color: #fff;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     cursor: pointer;
 }
 
 .faq-main--question[open] summary::after {
+    content: url("../img/faq_plus.svg") "-";
+    -webkit-transform: rotate(45deg) scale(1.2);
     transform: rotate(45deg) scale(1.2);
 }
 
@@ -326,6 +375,7 @@ summary::-moz-list-bullet {
 }
 
 .write_us {
+    background: -webkit-gradient(linear, left top, left bottom, from(#2FE89A), to(#2B3569));
     background: linear-gradient(180deg, #2FE89A 0%, #2B3569 100%);
 }
 
@@ -355,7 +405,12 @@ summary::-moz-list-bullet {
 
 .write_us form {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 62px;
 }
@@ -392,6 +447,8 @@ summary::-moz-list-bullet {
     border: 0;
     outline: 0;
     background: #44F1A6;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
     cursor: pointer;
@@ -402,8 +459,11 @@ footer {
 }
 
 footer > .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 50px 8.5%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -435,6 +495,8 @@ footer > .content {
 }
 
 .downloads-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -450,6 +512,7 @@ footer > .content {
     .content {
         padding-left: 16px;
         padding-right: 16px;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
 }
